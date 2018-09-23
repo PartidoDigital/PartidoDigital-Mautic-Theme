@@ -1,0 +1,9 @@
+{
+  "name": "Partido Digital",
+  "author": "Leo Giovanetti",
+  "authorUrl": "https://leog.me",
+  "features": [
+    "email",
+    "page"
+  ]
+}

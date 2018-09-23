@@ -1,0 +1,90 @@
+{% extends ":"~template~":base.html.twig" %}
+
+{% set isEmail = true %}
+
+{% block title %}
+    <!-- COMIENZO EMAIL TITLE -->
+    <h4 style="text-align: center; font-family: 'Open Sans', Verdana, Arial, sans-serif; font-size: 20px; line-height: 24px; font-weight:700; color: #212121; padding: 0; margin: 0;">
+        <singleline>
+            Subtítulo (opcional)
+        </singleline>
+    </h4>
+    <h1 style="text-align: center; font-family: 'Open Sans', Verdana, Arial, sans-serif; font-size:36px; line-height:36px; font-weight:700; color:#212121; padding:0; margin:0;">
+        <singleline>
+            Título del mail
+        </singleline>
+    </h1>
+    <!-- FIN EMAIL TITLE -->
+{% endblock %}
+
+{% block content %}
+<!-- COMIENZO EMAIL CONTENT -->
+<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" data-section-wrapper="1">
+    <tr data-section="1">
+        <td align="center" height="100%" valign="top" width="100%">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="660">
+            <tr>
+            <td align="center" valign="top" width="660">
+            <![endif]-->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:660px;" bgcolor="#f0f0f0">
+                <tr>
+                    <td align="center" style="font-family: 'Open Sans', Verdana, Arial, sans-serif; background:#f0f0f0; color:#212121; padding: 0 15px;" class="shrinker" data-slot-container="1">
+                        <div data-slot="text">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px; background: #ffffff" class="radius-bottom">
+                                <tr>
+                                    <td height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td align="center" valign="top" style="padding: 0 30px; text-align: left;">
+                                        <p style="text-align: left; font-family: 'Open Sans', Verdana, Arial, sans-serif; font-size:16px; line-height:30px; font-weight:400; color:#212121; padding: 0; margin: 0;">
+                                            <singleline>
+                                                ¡Hola {contactfield=firstname}! 
+                                            </singleline>
+                                        </p>
+                                        <br style="line-height: 18px; height: 18px; font-size: 18px;">
+                                        <p style="text-align: left; font-family: 'Open Sans', Verdana, Arial, sans-serif; font-size:16px; line-height:30px; font-weight:400; color:#212121; padding: 0; margin: 0;">
+                                            <multiline>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida mauris lectus, vitae semper ante rhoncus id. Duis vel accumsan lacus, et rutrum dui. Nunc rutrum ante justo, at lobortis enim faucibus cursus. Sed varius et odio in semper. 
+                                            </multiline>
+                                        </p>
+                                        <br style="line-height: 18px; height: 18px; font-size: 18px;">
+                                        <p style="text-align: left; font-family: 'Open Sans', Verdana, Arial, sans-serif; font-size:16px; line-height:30px; font-weight:400; color:#212121; padding: 0; margin: 0;">
+                                            <multiline>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida mauris lectus, vitae semper ante rhoncus id. Duis vel accumsan lacus, et rutrum dui. Nunc rutrum ante justo, at lobortis enim faucibus cursus. Sed varius et odio in semper. 
+                                            </multiline>
+                                        </p>
+                                        <br style="line-height: 18px; height: 18px; font-size: 18px;">
+                                        <p style="text-align: left; font-family: 'Open Sans', Verdana, Arial, sans-serif; font-size:16px; line-height:30px; font-weight:400; color:#212121; padding: 0; margin: 0;">
+                                            <singleline>
+                                                Equipo del Partido Digital.
+                                            </singleline>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <a href="#" class="btn">Acción (opcional)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="45" style="font-size: 45px; line-height: 45px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+</table>
+<!-- FIN EMAIL CONTENT-->
+{% endblock %}

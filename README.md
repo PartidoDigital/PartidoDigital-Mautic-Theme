@@ -1,0 +1,1 @@
+# PartidoDigital-Mautic-Theme
