@@ -2,57 +2,63 @@
 
 {% block content %}
 	<!-- COMIENZO EMAIL CONTENT -->
-	<table data-section="1" style="width: 600;" width="600" cellpadding="0" cellspacing="0">
-		<tbody>
-			<tr>
-				<td>
-					<div data-slot-container="1" style="min-height: 30px" class="ui-sortable">
-						<div data-slot="text">
-                            <img src="https://recursos.partidodigital.org.uy/assets/img/logo_at_naranja.png" class="fr-fic fr-dib" style="height: 31.8857px; margin-bottom: 8pt; width: 31px;" width="31" height="31.8857">
-                            <h2 style="margin:0">
-                                <span style="font-size: 18px;">Hola {contactfield=firstname}.</span>
-                            </h2>
-                            <br>
-                            <span style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas diam in mollis pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</span>
-                            <span style="font-size: 14px;"><br><br>Donec ornare sem non massa tristique molestie quis et massa. Duis ullamcorper, lectus et varius rhoncus, arcu turpis congue nisl, sed dictum magna est quis turpis.</span>
-                            <br>>
-						</div>
-						<div data-slot="button" data-param-padding-top="15" data-param-background-color="f36f21" style="padding-top: 15px;" data-param-link-text="Acción" data-param-href="LINK" data-param-float="0" align="left" data-param-button-size="0">
-							<a href="LINK" class="button" target="_blank" style="border-color: rgb(243, 111, 33); border-width: 10px 20px; border-style: solid; text-decoration: none; border-radius: 3px; background-color: rgb(243, 111, 33); display: inline-block; font-size: 14px; color: rgb(255, 255, 255); padding: 0px;" background="#f36f21">Acción</a>
-							<div style="clear:both"></div>
-						</div>
-						<div data-slot="text">
-							<span style="font-size: 14px;">
-								<span style="font-family: Arial,Helvetica,sans-serif;"><br>Saluda atentamente,</span>
-							</span>
-						</div>
-						<div data-slot="text">
-                            <br>
-                            <img src="https://recursos.partidodigital.org.uy/assets/img/logo_texto_naranja_blinking.gif" class="fr-fic fr-dib" style="width: 173px; height: 25.8209px;" width="173" height="25.8209"><br>
-                            <div style="opacity: 0.3;">
-								<a href="https://partidodigital.org.uy/documentos/programa-de-principios" style="font-family: Arial,Helvetica,sans-serif; font-size:10px; line-height:20px; color:#212121; text-transform: uppercase; text-decoration:underline;" target="_blank">Programa de Principios</a>
-								<span style="font-family: Arial,Helvetica,sans-serif; font-size:10px; line-height:20px; color:#dddddd;">&nbsp;|&nbsp;</span>
-								<a href="https://partidodigital.org.uy/documentos/politica-de-privacidad" style="font-family: Arial,Helvetica,sans-serif; font-size:10px; line-height:20px; color:#212121; text-transform: uppercase; text-decoration:underline;" target="_blank">Política de Privacidad</a>
-								<span style="font-family: Arial,Helvetica,sans-serif; font-size:10px; line-height:20px; color:#dddddd;">&nbsp;|&nbsp;</span>
-								<a href="https://partidodigital.org.uy/documentos/carta-organica" style="font-family: Arial,Helvetica,sans-serif; font-size:10px; line-height:20px; color:#212121; text-transform: uppercase; text-decoration:underline;" target="_blank">Carta orgánica</a>
-                                <br>
-                                <a href="https://facebook.com/PDigitalUY" rel="noopener noreferrer" style="font-family: Arial,Helvetica,sans-serif; text-decoration: none; font-size:10px; line-height:20px; color: rgb(41, 105, 176);" target="_blank">&nbsp;FACEBOOK&nbsp;</a>
-								<span style="color: #dddddd;">&nbsp;|&nbsp;</span>
-								<a href="https://twitter.com/PDigitalUY" rel="noopener noreferrer" style="font-family: Arial,Helvetica,sans-serif; text-decoration: none; font-size:10px; line-height:20px; color: rgb(84, 172, 210);" target="_blank">&nbsp;TWITTER&nbsp;</a>
-								<span style="color: #dddddd;">&nbsp;|&nbsp;</span>
-								<a href="https://partidodigital.org.uy" rel="noopener noreferrer" style="font-family: Arial,Helvetica,sans-serif; text-decoration: none; font-size:10px; line-height:20px; color: #f36f21;" target="_blank">&nbsp;WEB&nbsp;</a>
-								<span style="color: #dddddd;">&nbsp;|&nbsp;</span>
-								<a href="https://mivoz.uy" rel="noopener noreferrer" style="font-family: Arial,Helvetica,sans-serif; text-decoration: none; font-size:10px; line-height:20px; color: rgb(65, 168, 95);" target="_blank">&nbsp;MIVOZ&nbsp;</a>
-								<br>
-								<a href="{unsubscribe_url}" style="color: #212121; font-size:10px; text-transform: uppercase; text-decoration:none;" target="_blank">&nbsp;Dejar de recibir correos del Partido Digital&nbsp;</a>
-								<span style="color: #dddddd;">&nbsp;|&nbsp;</span>
-								<a href="{webview_url}" style="color: #212121; font-size:10px; text-transform: uppercase; text-decoration:none;" target="_blank">&nbsp;Ver en el navegador&nbsp;</a></div>
-                            </div>
-						</div>
-					</div>
-				</td>
-			</tr>
-		</tbody>
+	<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" align="left">
+		<tr>
+			<td width="100%" valign="top" align="left">
+				<table data-section="1" style="width: 600; margin: 20px;" width="600" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td>
+								<div data-slot-container="1" style="min-height: 30px" class="ui-sortable">
+									<div data-slot="text">
+										<img src="https://recursos.partidodigital.org.uy/assets/img/logo_at_naranja.png" class="fr-fic fr-dib" style="height: 31.8857px; margin-bottom: 8pt; width: 31px;" width="31" height="31.8857">
+										<h2 style="margin:0">
+											<span style="font-size: 18px;">Hola {contactfield=firstname}.</span>
+										</h2>
+										<br>
+										<span style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas diam in mollis pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</span>
+										<span style="font-size: 14px;"><br><br>Donec ornare sem non massa tristique molestie quis et massa. Duis ullamcorper, lectus et varius rhoncus, arcu turpis congue nisl, sed dictum magna est quis turpis.</span>
+										<br>
+									</div>
+									<div data-slot="button" data-param-padding-top="15" data-param-background-color="f36f21" style="padding-top: 15px;" data-param-link-text="Acción" data-param-href="LINK" data-param-float="0" align="left" data-param-button-size="0">
+										<a href="LINK" class="button" target="_blank" style="border-color: rgb(243, 111, 33); border-width: 10px 20px; border-style: solid; text-decoration: none; border-radius: 3px; background-color: rgb(243, 111, 33); display: inline-block; font-size: 14px; color: rgb(255, 255, 255); padding: 0px;" background="#f36f21">Acción</a>
+										<div style="clear:both"></div>
+									</div>
+									<div data-slot="text">
+										<span style="font-size: 14px;">
+											<br>Saluda atentamente,
+										</span>
+									</div>
+									<div data-slot="text">
+										<br>
+										<img src="https://recursos.partidodigital.org.uy/assets/img/logo_texto_naranja_blinking.gif" class="fr-fic fr-dib" style="width: 173px; height: 25.8209px;" width="173" height="25.8209"><br>
+										<div style="opacity: 0.3;">
+											<a href="https://partidodigital.org.uy/documentos/programa-de-principios" style="font-size:10px; line-height:20px; color:#212121; text-transform: uppercase; text-decoration:underline;" target="_blank">Programa de Principios</a>
+											<span style="font-size:10px; line-height:20px; color:#dddddd;">&nbsp;|&nbsp;</span>
+											<a href="https://partidodigital.org.uy/documentos/politica-de-privacidad" style="font-size:10px; line-height:20px; color:#212121; text-transform: uppercase; text-decoration:underline;" target="_blank">Política de Privacidad</a>
+											<span style="font-size:10px; line-height:20px; color:#dddddd;">&nbsp;|&nbsp;</span>
+											<a href="https://partidodigital.org.uy/documentos/carta-organica" style="font-size:10px; line-height:20px; color:#212121; text-transform: uppercase; text-decoration:underline;" target="_blank">Carta orgánica</a>
+											<br>
+											<a href="https://facebook.com/PDigitalUY" rel="noopener noreferrer" style="text-decoration: none; font-size:10px; line-height:20px; color: rgb(41, 105, 176);" target="_blank">&nbsp;FACEBOOK&nbsp;</a>
+											<span style="color: #dddddd;">&nbsp;|&nbsp;</span>
+											<a href="https://twitter.com/PDigitalUY" rel="noopener noreferrer" style="text-decoration: none; font-size:10px; line-height:20px; color: rgb(84, 172, 210);" target="_blank">&nbsp;TWITTER&nbsp;</a>
+											<span style="color: #dddddd;">&nbsp;|&nbsp;</span>
+											<a href="https://partidodigital.org.uy" rel="noopener noreferrer" style="text-decoration: none; font-size:10px; line-height:20px; color: #f36f21;" target="_blank">&nbsp;WEB&nbsp;</a>
+											<span style="color: #dddddd;">&nbsp;|&nbsp;</span>
+											<a href="https://mivoz.uy" rel="noopener noreferrer" style="text-decoration: none; font-size:10px; line-height:20px; color: rgb(65, 168, 95);" target="_blank">&nbsp;MIVOZ&nbsp;</a>
+											<br>
+											<a href="{unsubscribe_url}" style="color: #212121; font-size:10px; text-transform: uppercase; text-decoration:none;" target="_blank">&nbsp;Dejar de recibir correos del Partido Digital&nbsp;</a>
+											<span style="color: #dddddd;">&nbsp;|&nbsp;</span>
+											<a href="{webview_url}" style="color: #212121; font-size:10px; text-transform: uppercase; text-decoration:none;" target="_blank">&nbsp;Ver en el navegador&nbsp;</a></div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
 	</table>
 	<!-- FIN EMAIL CONTENT-->
 {% endblock %}
