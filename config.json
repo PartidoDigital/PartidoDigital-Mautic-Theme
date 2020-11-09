@@ -3,6 +3,6 @@
   "author": "Leo Giovanetti",
   "authorUrl": "https://leog.me",
   "features": [
-    "email"
+    "email", "page"
   ]
 }

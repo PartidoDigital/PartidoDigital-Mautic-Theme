@@ -1,5 +1,30 @@
 {% extends ":"~template~":base.html.twig" %}
 
+{% block head %}
+<style type="text/css">
+	body,table,td,a { -webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;font-family: Arial, sans-serif;	}
+	table,td { mso-table-lspace: 0;mso-table-rspace: 0; }
+	img { border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic; }
+	table { border-collapse: collapse !important; }
+	body { font-family: 'Open Sans', Verdana, Arial, sans-serif;height: 100% !important;margin: 0 !important;padding: 0 !important;width: 100% !important;-webkit-font-smoothing: antialiased !important;font-smoothing: antialiased !important; }
+	div[style*="margin: 16px 0;"] { margin: 0 !important; }
+	a[x-apple-data-detectors] { color: inherit !important;text-decoration: none !important;font-size: inherit !important;font-family: inherit !important;font-weight: inherit !important;line-height: inherit !important; }
+	.radius-top { border-radius: 20px 20px 0 0; }
+	.radius-bottom { border-radius: 0 0 20px 20px; }
+	a.btn {	font-size: 20px; border: 2px solid #003366;text-decoration: none;font-weight: 700;color: white;background-color: #003366;white-space: normal;padding: 5px 7px;border-radius: 10px;line-height: 1.25;text-align: center;	}
+	a.btn:hover { color: #f36f21;border-color: #003366;	}
+	@media only screen and(min-width: 660px) {
+		.shrinker {	padding: 0 55px !important;	}
+		.c4 { width: 35% !important;float: left !important;display: block !important; }
+		.c8 { width: 60% !important;padding-left: 5% !important;float: left !important;display: block !important; }
+	}
+	@media only screen and(max-width: 660px) {
+		.shrinker { width: 100% !important;	}
+		.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c10,.c11,.c12 { width: 100% !important;float: left !important;display: block;padding: 0 !important;margin: 10px 0 !important; }
+	}
+</style>
+{% endblock %}
+
 {% block content %}
 	<!-- COMIENZO EMAIL CONTENT -->
 	<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" align="left">
@@ -47,7 +72,7 @@
 											<span style="color: #dddddd;">&nbsp;|&nbsp;</span>
 											<a href="https://mivoz.uy" rel="noopener noreferrer" style="text-decoration: none; font-size:10px; line-height:20px; color: rgb(65, 168, 95);" target="_blank">&nbsp;MIVOZ&nbsp;</a>
 											<br>
-											<a href="{unsubscribe_url}" style="color: #212121; font-size:10px; text-transform: uppercase; text-decoration:none;" target="_blank">&nbsp;Dejar de recibir correos del Partido Digital&nbsp;</a>
+											<a href="{unsubscribe_url}" style="color: #212121; font-size:10px; text-transform: uppercase; text-decoration:none;" target="_blank">&nbsp;Cambiar mis preferencias de contacto&nbsp;</a>
 											<span style="color: #dddddd;">&nbsp;|&nbsp;</span>
 											<a href="{webview_url}" style="color: #212121; font-size:10px; text-transform: uppercase; text-decoration:none;" target="_blank">&nbsp;Ver en el navegador&nbsp;</a></div>
 										</div>
