@@ -4,15 +4,39 @@
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/tailwindcss@1.9.4/dist/tailwind.min.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css" />
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js"></script>
+<style>
+  h1 { font-weight: 700; } 
+  h4 { font-style: italic; } 
+  table { margin-top: 0.75rem; width: 100%; }
+  .text-muted { --text-opacity: 1; color: #a0aec0; color: rgba(160, 174, 192, var(--text-opacity)); } 
+  label { display: inline-block; margin-bottom: 0.25rem; font-weight: 400; font-size: 1.125rem; } 
+  #frequency_email { display: flex; margin-bottom: 1rem; }
+  .col-md-6 { border-width: 1px; padding: 1rem; border-radius: 0.25rem; } 
+  .col-md-6:first-child { margin-right: 1rem; } 
+  input[type="text"], input[type="date"], input[type="number"] { border-width: 1px; height: 1.75rem; width: 10rem; display: block; }
+  select { border-width: 1px; display: block; width: auto; } 
+  hr { display: none; } 
+  label.control-label { font-weight: 600; margin-top: 0.25rem; }
+  small { line-height: .75rem; } 
+  #contact-segments { margin-bottom: 1rem; } 
+  button[type="submit"] { --bg-opacity: 1; background-color: #ee7211; background-color: rgba(238, 114, 17, var(--bg-opacity)); --text-opacity: 1; color: #fff; color: rgba(255, 255, 255, var(--text-opacity)); font-weight: 700; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0.25rem; }
+</style>
 {% endblock %}
 
 {% block content %}
-<div class="app-home flex items-center justify-center text-center flex-col h-screen" style="background-color:#ee7211;" data-section-wrapper="1">
-  <div class="bg-white overflow-hidden shadow rounded-lg" data-slot-container="1">
-    <div class="px-4 py-5 sm:p-6">
-      <img src="https://recursos.partidodigital.org.uy/assets/img/logo_horizontal_naranja.svg" class="w-full h-15 pb-4" alt="Partido Digital" />
-      <div data-slot="text" class="text-left">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus felis, convallis porta cursus vehicula, iaculis at erat. Suspendisse quis pulvinar ligula. Etiam sagittis, velit a cursus sollicitudin, enim ex vestibulum felis, ac finibus dui dui ac est.
+<div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+  <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+    <div class="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-700 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+    <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-16">
+      <div class="max-w-md mx-auto">
+        <div>
+          <img src="https://recursos.partidodigital.org.uy/assets/img/logo_horizontal_naranja.svg" class="h-10 sm:h-10" />
+        </div>
+        <div class="pt-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+          <div data-slot="text" class="text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus felis, convallis porta cursus vehicula, iaculis at erat. Suspendisse quis pulvinar ligula. Etiam sagittis, velit a cursus sollicitudin, enim ex vestibulum felis, ac finibus dui dui ac est.
+          </div>
+        </div>
       </div>
     </div>
   </div>
