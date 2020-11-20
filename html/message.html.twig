@@ -3,19 +3,27 @@
 {% block head %}
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/tailwindcss@1.9.4/dist/tailwind.min.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="https://recursos.partidodigital.org.uy/assets/css/mautic.css" />
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js"></script>
 {% endblock %}
 
 {% block content %}
-<div class="app-home flex items-center justify-center text-center flex-col h-screen" style="background-color:#ee7211;" data-section-wrapper="1">
-  <div class="bg-white overflow-hidden shadow rounded-lg" data-slot-container="1">
-    <div class="px-4 py-5 sm:p-6">
-      <img src="https://recursos.partidodigital.org.uy/assets/img/logo_horizontal_naranja.svg" class="w-full h-15 pb-4" alt="Partido Digital" />
-      <div data-slot="text" class="text-left">
-		{{ message|raw }}
-        {% if content is defined %}
-        <div>{{ content|raw }}</div>
-        {% endif %}
+<div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+  <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+    <div class="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-700 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+    <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-16">
+      <div class="max-w-md mx-auto">
+        <div>
+          <img src="https://recursos.partidodigital.org.uy/assets/img/logo_horizontal_naranja.svg" class="h-10 sm:h-10" />
+        </div>
+        <div class="pt-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+          <div data-slot="text" class="text-left">
+            {{ message|raw }}
+            {% if content is defined %}
+            <div>{{ content|raw }}</div>
+            {% endif %}
+          </div>
+        </div>
       </div>
     </div>
   </div>
