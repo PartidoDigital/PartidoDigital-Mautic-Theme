@@ -2,6 +2,7 @@
   "name": "Partido Digital",
   "author": "Leo Giovanetti",
   "authorUrl": "https://leog.me",
+  "builder": ["legacy", "grapesjsbuilder"],
   "features": [
     "email", "page"
   ]
